@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <style>
+  img {
+    height: 100px;
+    float: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<div id="images"></div>
+ 
+<script>
+(function() {
+  var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  $.getJSON( flickerAPI, {
+    tags: "mount rainier",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      $.each( data.items, function( i, item ) {
+      
+        $( "<img>" ).attr( {src: item.media.m, title:item.description }).appendTo(
+	$('<a />').attr({  href: item.link}).appendTo( "#images" ));
+  console.log(i+" "+data.items.length)
+        if ( i === data.items.length ) {
+          return false;
+        }
+      });
+    });
+})();
+</script>
+ 
+</body>
+</html>
+
+http://www.objgen.com/json/models/7RV
