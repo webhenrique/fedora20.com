@@ -93,7 +93,7 @@
       <div class="intro-info">
         <h2>You want it?<br>We print it!</h2>
         <div>
-          <a href="#portfolio" class="btn-get-started scrollto">Request Print</a>
+          <a href="#" class="btn-get-started" data-toggle="modal" data-target="#request">Request Print</a>
           <a href="#portfolio" class="btn-services scrollto">Galery</a>
           <a href="https://20fedora.pt/NewBiz/" class="btn-services scrollto">How do we work?</a>
         </div>
@@ -711,7 +711,7 @@
               </div>
               <div class="col-md-4 info">
                 <i class="ion-ios-email-outline"></i>
-                <p>angela@gmail.com</p>
+                <p>webangelasilva96@gmail.com</p>
               </div>
               <div class="col-md-3 info">
                 <i class="ion-ios-telephone-outline"></i>
@@ -784,7 +784,7 @@
               lisbon, PT<br>
               Portugal <br>
               <strong>Phone:</strong> +351 *********<br>
-              <strong>Email:</strong> angela@gmail.com<br>
+              <strong>Email:</strong> webangelasilva96@gmail.com<br>
             </p>
 
 
@@ -822,9 +822,49 @@
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
         -->
         Designed by some guy on bootstrap, we changed a few things
+		
+    Launch demo modal
+  </button>
       </div>
     </div>
   </footer><!-- #footer -->
+  
+
+<div id="request" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+
+		  <div class="modal-header">
+			<h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">×</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			...
+			<a href="#" class="btn btn-get-started" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#thanks">Finish</a>
+			<a href="#" class="btn btn-get-started" data-dismiss="modal" aria-label="Close">Close</a>
+		  </div>
+		</div>
+	  </div>
+</div>
+
+<div id="thanks" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+
+		  <div class="modal-header">
+			<h4 class="modal-title" id="myLargeModalLabel">Thanks man</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">×</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			You the best
+		  </div>
+		</div>
+	  </div>
+</div>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
@@ -845,10 +885,11 @@
   <!-- Contact Form JavaScript File -->
 	<script src="contactform/contactform.js"></script>
 	<script src="js/main.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
+
 
   <!-- Template Main Javascript File -->
 	
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>	
 	<script>
 	// Set the date we're counting down to
 	var particles = Particles.init({
