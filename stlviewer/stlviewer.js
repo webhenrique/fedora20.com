@@ -2,7 +2,7 @@ var material;
 var scene;
 var mesh;
 var banana;
-
+var view = document.getElementById("stlviewer");
 
 function STLViewerEnable(classname) {
     var models = document.getElementsByClassName(classname);
@@ -109,7 +109,7 @@ input.addEventListener("change", function (ev) {
 	openFile(file);
 }, false);
 
-var view = document.getElementById("stlviewer");
+
 view.addEventListener("dragover", function (ev) {
 	ev.stopPropagation();
 	ev.preventDefault();
