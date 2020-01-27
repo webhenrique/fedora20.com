@@ -96,7 +96,6 @@ var openFile = function (file) {
 	reader.addEventListener("load", function (ev) {
 		var buffer = ev.target.result;
 		banana = loadStl(buffer);
-		scene.remove(obj);
 		resetMesh();
 	}, false);
 	reader.readAsArrayBuffer(file);
