@@ -56,7 +56,7 @@ function STLViewer(elem, model) {
         // Pull the camera away as needed
         var largestDimension = Math.max(geometry.boundingBox.max.x,
             geometry.boundingBox.max.y, geometry.boundingBox.max.z)
-        camera.position.z = largestDimension * 1;
+        camera.position.z = largestDimension * 2;
 
 
         var animate = function () {
