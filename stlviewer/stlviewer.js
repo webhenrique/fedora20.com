@@ -1,6 +1,7 @@
 var material;
 var scene;
 var mesh;
+var banana;
 function STLViewerEnable(classname) {
     var models = document.getElementsByClassName(classname);
     for (var i = 0; i < models.length; i++) {
@@ -41,7 +42,8 @@ function STLViewer(elem, model) {
 
     (new THREE.STLLoader()).load(model, function (geometry) {
         material = new THREE.MeshPhongMaterial({ color: 0x00003C, specular: 100, shininess: 100 });
-        mesh = new THREE.Mesh(geometry, material);
+        banana = geometry;
+		mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
         // Compute the middle
