@@ -122,5 +122,5 @@ view.addEventListener("drop", function (ev) {
 	openFile(file);
 }, false);
 
-}
+}, false);
 
