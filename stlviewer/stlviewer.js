@@ -38,8 +38,9 @@ function STLViewer(elem, model) {
     scene.add(new THREE.HemisphereLight(0xffffff, 0x080820, 1.5));
 
     (new THREE.STLLoader()).load(model, function (geometry) {
-        var material = new THREE.MeshPhongMaterial({ color: 0x000000, specular: 100, shininess: 100 });
+        var material = new THREE.MeshPhongMaterial({ color: 0x00003C, specular: 100, shininess: 100 });
         var mesh = new THREE.Mesh(geometry, material);
+		mesh.rotateX(-deg90);
         scene.add(mesh);
 
         // Compute the middle
