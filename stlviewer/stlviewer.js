@@ -40,7 +40,6 @@ function STLViewer(elem, model) {
     (new THREE.STLLoader()).load(model, function (geometry) {
         var material = new THREE.MeshPhongMaterial({ color: 0x00003C, specular: 100, shininess: 100 });
         var mesh = new THREE.Mesh(geometry, material);
-		mesh.rotateX(-deg90);
         scene.add(mesh);
 
         // Compute the middle
