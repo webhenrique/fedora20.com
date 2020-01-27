@@ -88,3 +88,37 @@ function resetMesh(){
 	mesh.position.z = -1 * middle.z;
 	scene.add(mesh);
 }
+
+var openFile = function (file) {
+	var reader = new FileReader();
+	reader.addEventListener("load", function (ev) {
+		var buffer = ev.target.result;
+		banana = loadStl(buffer);
+		scene.remove(obj);
+		resetMesh();
+	}, false);
+	reader.readAsArrayBuffer(file);
+};
+
+// file input button
+var input = document.getElementById("file");
+input.addEventListener("change", function (ev) {
+	var file = ev.target.files[0];
+	openFile(file);
+}, false);
+
+var view = document.getElementById("stlviewer");
+view.addEventListener("dragover", function (ev) {
+	ev.stopPropagation();
+	ev.preventDefault();
+	ev.dataTransfer.dropEffect = "copy";
+}, false);
+view.addEventListener("drop", function (ev) {
+	ev.stopPropagation();
+	ev.preventDefault();
+	var file = ev.dataTransfer.files[0];
+	openFile(file);
+}, false);
+
+
+
