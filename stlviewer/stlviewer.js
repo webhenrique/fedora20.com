@@ -2,6 +2,8 @@ var material;
 var scene;
 var mesh;
 var banana;
+
+
 function STLViewerEnable(classname) {
     var models = document.getElementsByClassName(classname);
     for (var i = 0; i < models.length; i++) {
@@ -88,7 +90,7 @@ function resetMesh(){
 	mesh.position.z = -1 * middle.z;
 	scene.add(mesh);
 }
-
+window.addEventListener("load", function () {
 var openFile = function (file) {
 	var reader = new FileReader();
 	reader.addEventListener("load", function (ev) {
@@ -120,5 +122,5 @@ view.addEventListener("drop", function (ev) {
 	openFile(file);
 }, false);
 
-
+}
 
