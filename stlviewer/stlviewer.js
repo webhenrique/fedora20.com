@@ -1,5 +1,6 @@
 var material;
-
+var scene;
+var mesh;
 function STLViewerEnable(classname) {
     var models = document.getElementsByClassName(classname);
     for (var i = 0; i < models.length; i++) {
@@ -34,13 +35,13 @@ function STLViewer(elem, model) {
     controls.autoRotate = true;
     controls.autoRotateSpeed = .75;
 
-    var scene = new THREE.Scene();
+    scene = new THREE.Scene();
 
     scene.add(new THREE.HemisphereLight(0xffffff, 0x080820, 1.5));
 
     (new THREE.STLLoader()).load(model, function (geometry) {
         material = new THREE.MeshPhongMaterial({ color: 0x00003C, specular: 100, shininess: 100 });
-        var mesh = new THREE.Mesh(geometry, material);
+        mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
         // Compute the middle
