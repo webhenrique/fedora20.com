@@ -42,7 +42,7 @@ function STLViewer(elem, model) {
 
     (new THREE.STLLoader()).load(model, function (geometry) {
         material = new THREE.MeshPhongMaterial({ color: 0x00003C, specular: 100, shininess: 100 });
-        banana = geometry;
+        
 		mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
@@ -61,7 +61,7 @@ function STLViewer(elem, model) {
         var largestDimension = Math.max(geometry.boundingBox.max.x,
             geometry.boundingBox.max.y, geometry.boundingBox.max.z)
         camera.position.z = largestDimension * 2;
-
+		banana = geometry;
 
         var animate = function () {
             requestAnimationFrame(animate);
