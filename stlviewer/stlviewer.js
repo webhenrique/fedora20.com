@@ -48,6 +48,7 @@ function STLViewer(elem, model) {
         geometry.boundingBox.getCenter(middle);
 
         // Center it
+		mesh.rotation.set( - Math.PI / 2, 0.3, 0 );
         mesh.position.x = -1 * middle.x;
         mesh.position.y = -1 * middle.y;
         mesh.position.z = -1 * middle.z;
