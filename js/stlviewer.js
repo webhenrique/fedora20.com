@@ -44,7 +44,7 @@ function STLViewer(elem, model) {
     scene.add(new THREE.HemisphereLight(0xffffff, 0x080820, 1.5));
 
     (new THREE.STLLoader()).load(model, function (geometry) {
-        material = new THREE.MeshPhongMaterial({ color: 0x00003C, specular: 100, shininess: 100 });
+        material = new THREE.MeshPhongMaterial({ color: 0xf20f20, specular: 100, shininess: 100 });
         
 		mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
