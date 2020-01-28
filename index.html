@@ -86,7 +86,10 @@
     <div class="container" style="position: inherit; z-index: 2;">
 	
       <div class="intro-img">
-        <img src="img/intro-img.png" alt="" class="img-fluid">
+        <div style="display:none;">
+		select stl file: <input type="file" id="file" /> or drop stl file
+		</div>
+		<div id=stlviewer class=stlviewer data-src=Desk_Organizer.stl></div>
       </div>
 
       <div class="intro-info">
@@ -1041,7 +1044,20 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <!-- Contact Form JavaScript File -->
 	<script src="contactform/contactform.js"></script>
+	
+	
 	<script src="js/main.js"></script>
+	<script type=text/javascript> 
+	window.onload=function() {
+		STLViewerEnable("stlviewer");
+	 } 
+    </script>
+	<script src="js/three.js/build/three.min.js"></script>
+    <script src="js/three.js/examples/js/WebGL.js"></script>
+    <script src="js/three.js/examples/js/loaders/STLLoader.js"></script>
+    <script src="js/three.js/examples/js/controls/OrbitControls.js"></script>
+	<script src="js/stl.js"></script>
+	<script src="js/stlviewer.js"></script>
 <script data-cfasync="false" src="form-submission-handler.js"></script>
 
   <!-- Template Main Javascript File -->
