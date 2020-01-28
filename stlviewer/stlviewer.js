@@ -96,6 +96,14 @@ function resetMesh(){
 	mesh.position.z = -1 * middle.z;
 	scene.add(mesh);
 }
+
+function colorchange(in_color){
+	scene.remove(mesh);
+	material = new THREE.MeshPhongMaterial({ color: in_color, specular: 100, shininess: 100 });
+	mesh = new THREE.Mesh(banana, material);
+	scene.add(mesh);
+	
+}
 window.addEventListener("load", function () {
 var openFile = function (file) {
 	var reader = new FileReader();
