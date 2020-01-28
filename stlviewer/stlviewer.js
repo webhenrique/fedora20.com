@@ -102,6 +102,9 @@ function mouseOverColor(){
 
 function colorchange(in_color,cordinates){
 	scene.remove(mesh);
+	var middle = new THREE.Vector3();
+	banana.computeBoundingBox();
+	banana.boundingBox.getCenter(middle);
 	material = new THREE.MeshPhongMaterial({ color: in_color, specular: 100, shininess: 100 });
 	mesh = new THREE.Mesh(banana, material);
 	mesh.rotation.set( - Math.PI / 2, 0, 0 );
