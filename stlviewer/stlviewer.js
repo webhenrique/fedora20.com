@@ -96,11 +96,18 @@ function resetMesh(){
 	mesh.position.z = -1 * middle.z;
 	scene.add(mesh);
 }
+function mouseOverColor(){
+	return;
+}
 
-function colorchange(in_color){
+function colorchange(in_color,cordinates){
 	scene.remove(mesh);
 	material = new THREE.MeshPhongMaterial({ color: in_color, specular: 100, shininess: 100 });
 	mesh = new THREE.Mesh(banana, material);
+	mesh.rotation.set( - Math.PI / 2, 0, 0 );
+	mesh.position.x = -1 * middle.x;
+	mesh.position.y = -1 * middle.y;
+	mesh.position.z = -1 * middle.z;
 	scene.add(mesh);
 	
 }
