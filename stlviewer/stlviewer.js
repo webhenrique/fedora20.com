@@ -3,6 +3,7 @@ var scene;
 var mesh;
 var banana;
 var view = document.getElementById("stlviewer");
+var camera;
 
 function STLViewerEnable(classname) {
     var models = document.getElementsByClassName(classname);
@@ -19,7 +20,7 @@ function STLViewer(elem, model) {
     }
 
     var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    var camera = new THREE.PerspectiveCamera(70, elem.clientWidth / elem.clientHeight, 1, 1000);
+    camera = new THREE.PerspectiveCamera(70, elem.clientWidth / elem.clientHeight, 1, 1000);
     renderer.setSize(elem.clientWidth, elem.clientHeight);
     elem.appendChild(renderer.domElement);
 
@@ -76,7 +77,7 @@ function STLViewer(elem, model) {
 
 function resetMesh(){
 	scene.remove(mesh);
-	mesh = new THREE.Mesh(banana, material);
+	
 
 	// Compute the middle
 	var middle = new THREE.Vector3();
@@ -88,6 +89,10 @@ function resetMesh(){
 	mesh.position.x = -1 * middle.x;
 	mesh.position.y = -1 * middle.y;
 	mesh.position.z = -1 * middle.z;
+	var largestDimension = Math.max(banana.boundingBox.max.x,
+            banana.boundingBox.max.y, banana.boundingBox.max.z)
+        camera.position.z = largestDimension * 2;
+	mesh = new THREE.Mesh(banana, material);
 	scene.add(mesh);
 }
 window.addEventListener("load", function () {
