@@ -45,7 +45,7 @@ function STLViewer(elem, model) {
 
     (new THREE.STLLoader()).load(model, function (geometry) {
         material = new THREE.MeshPhongMaterial({ color: 0xf20f20, specular: 100, shininess: 100 });
-        
+        geometry.rotateX(- Math.PI / 2); 
 		mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
@@ -78,7 +78,7 @@ function STLViewer(elem, model) {
 function resetMesh(){
 	scene.remove(mesh);
 	
-
+	banana.rotateX(- Math.PI / 2); 
 	// Compute the middle
 	var middle = new THREE.Vector3();
 	banana.computeBoundingBox();
