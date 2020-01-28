@@ -115,7 +115,7 @@
       </div>
 
     
-	<canvas class="background" style="position: absolute;top: 0;left: 0;pointer-events: none;"></canvas>
+	<canvas class="backgrounds" style="position: absolute;top: 0;left: 0;pointer-events: none;"></canvas>
   </section><!-- #intro -->
 
   <main id="main">
@@ -1058,19 +1058,17 @@
   <!-- Contact Form JavaScript File -->
 	<script src="contactform/contactform.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>	
-	<script>
-	// Set the date we're counting down to
-	var particles = Particles.init({
-		selector: '.background',
-	  color: ['#f20f20', '#404B69', '#DBEDF3'],
-	  connectParticles: true
-	});
-	</script>
+
 	
 	<script src="js/main.js"></script>
 	<script type=text/javascript> 
 	window.onload=function() {
 		STLViewerEnable("stlviewer");
+		var particles = Particles.init({
+			selector: '.backgrounds',
+		  color: ['#f20f20', '#404B69', '#DBEDF3'],
+		  connectParticles: true
+		});
 	 } 
     </script>
 	<script src="js/three.js/build/three.min.js"></script>
