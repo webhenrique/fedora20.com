@@ -55,7 +55,6 @@ function STLViewer(elem, model) {
         geometry.boundingBox.getCenter(middle);
 
         // Center it
-		mesh.rotation.set( - Math.PI / 2, 0, 0 );
         mesh.position.x = -1 * middle.x;
         mesh.position.y = -1 * middle.y;
         mesh.position.z = -1 * middle.z;
@@ -90,7 +89,6 @@ function resetMesh(){
             banana.boundingBox.max.y, banana.boundingBox.max.z)
         camera.position.z = largestDimension * 2;
 	mesh = new THREE.Mesh(banana, material);
-	mesh.rotation.set( - Math.PI / 2, 0, 0 );
 	mesh.position.x = -1 * middle.x;
 	mesh.position.y = -1 * middle.y;
 	mesh.position.z = -1 * middle.z;
@@ -107,7 +105,6 @@ function colorchange(in_color,cordinates){
 	banana.boundingBox.getCenter(middle);
 	material = new THREE.MeshPhongMaterial({ color: in_color, specular: 100, shininess: 100 });
 	mesh = new THREE.Mesh(banana, material);
-	mesh.rotation.set( - Math.PI / 2, 0, 0 );
 	mesh.position.x = -1 * middle.x;
 	mesh.position.y = -1 * middle.y;
 	mesh.position.z = -1 * middle.z;
