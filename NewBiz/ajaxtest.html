@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing ajax</title>
+	<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="20 fedora 20fedora 3d print 3dprint prints fedora20">
+  <meta content="" name="20fedora is a 3d pritning 'company' that gives 3d prints for free... for now">
+
+  <!-- Favicons -->
+  <link href="ico.ico" rel="icon">
+  <link href="ico.ico" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+	.img-fluid{
+		width:100%;
+	}
+	#hovercolors {
+		position: absolute;
+		width: 20px;
+		top: 200px;
+		right: 90px;
+	}
+	#hovercolors:hover {
+		display: block;
+		zoom: 50%;
+		width: 236px;
+		top: 320px;
+		right: 80px;
+	}
+	
+  </style>
+</head>
+<body>
+
+<div id="contents">
+	
+
+</div>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript">
+  	fetch("portfolio.html")
+	  .then(response => {
+	    return response.text()
+	  })
+	  .then(data => {
+	    document.getElementByid('contents').innerHTML = data;
+	  });
+
+  </script>
+</body>
+</html>
