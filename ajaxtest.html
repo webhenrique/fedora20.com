@@ -56,12 +56,12 @@
 
   <script src="lib/jquery/jquery.min.js"></script>
   <script type="text/javascript">
-  	fetch("portfolio.html")
+  	fetch("include/portfolio.html")
 	  .then(response => {
 	    return response.text()
 	  })
 	  .then(data => {
-	    document.getElementByid('contents').innerHTML = data;
+	    document.getElementById('contents').innerHTML = data;
 	  });
 
   </script>
