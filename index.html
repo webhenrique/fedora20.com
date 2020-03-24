@@ -392,11 +392,12 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="js/include.js"></script>
   <!-- Contact Form JavaScript File -->
 	<script src="contactform/contactform.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>	
 
-	
+
 	<script src="js/main.js"></script>
 	<script type=text/javascript> 
 	window.onload=function() {
@@ -427,65 +428,5 @@
 
   gtag('config', 'UA-161646592-1');
 </script>	
-
-  <script type="text/javascript">
-    fetch("include/portfolio.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.getElementById('portfolio').innerHTML = data;
-    });
-
-    fetch("include/intro.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.getElementById('intro').innerHTML = data;
-    });
-
-    fetch("include/about.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.getElementById('about').innerHTML = data;
-    });
-
-    fetch("include/contact.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.getElementById('contact').innerHTML = data;
-    });
-
-    fetch("include/services.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.getElementById('services').innerHTML = data;
-    });
-
-    fetch("include/team.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.getElementById('team').innerHTML = data;
-    });
-
-    fetch("include/why-us.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.getElementById('why-us').innerHTML = data;
-    });
-
-  </script>
-
 </body>
 </html>
