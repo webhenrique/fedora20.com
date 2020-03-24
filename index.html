@@ -394,7 +394,49 @@
       <script src="lib/lightbox/js/lightbox.min.js"></script>
 
       <script type="text/javascript">
-    
+    var header ="<div class='container'>"+
+          "<header class='section-header'>"+
+          "<h3 class='section-title'>Our Gallery</h3>"+
+          "<p>Actualy it is the prints that we have printed<br>"+
+          "Hover the gif to see the real image, source file, actual source (if not original) or a better view"+
+          "</p>"+
+        "</header>"+
+        "<div class='row'>"+
+        "<div class='col-lg-12'>"+
+        " <ul id='portfolio-flters'>";
+
+    var filters = [{data_filter:"*",value:"All"},
+                        {data_filter:".filter-dnd",value:"D&D"},
+                        {data_filter:".filter-games",value:"Games"},
+                        {data_filter:".filter-anime",value:"Anime"},
+                        {data_filter:".filter-others",value:"Others"}];
+    var row_text = "";
+
+    for (var i = 0; i < filters.length; i++) {
+      row_text+="<li data-filter='"+filters[i].data_filter+"'";
+                if(i==0){
+                    row_text+="class='filter-active'";
+                }
+                row_text+=">"+filters[i].value+"</li>";
+    }
+
+    row_text+="</ul></div></div>";
+
+    var full_prof_text=header+row_text+"</div>";
+    $("#portfolio").append(full_prof_text);
+
+    var arrprints=[{filter:"filter-dnd",
+                    subfiler:"D&D",
+                    title:"Dark Knight",
+                    description:"In the D&D session our main mission was to find and kill the dark knight... he is not an easy task!",
+                    previewimg:"img/gifs/28n.gif",
+                    hoverimg:"img/gifs/24n.gif",
+                    popupimg:"img/gifs/24n.gif"
+
+                    }];
+
+    full_prof_text+="<div class='row portfolio-container'>";
+
 
       </script>
       <script src="js/include.js"></script>
@@ -402,9 +444,18 @@
     	<script src="contactform/contactform.js"></script>
     	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>	
 
-
+    <script src="js/stl.js"></script>
     	<script src="js/main.js"></script>
-    	
+    	<script type="text/javascript"> 
+    	window.onload=function() {
+    		STLViewerEnable("stlviewer");
+    		var particles = Particles.init({
+    			selector: '.backgrounds',
+    		  color: ['#f20f20', '#404B69', '#DBEDF3'],
+    		  connectParticles: true
+    		});
+    	 } 
+        </script>
 
     <script data-cfasync="false" src="js/form-submission-handler.js"></script>
 
