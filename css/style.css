@@ -1410,3 +1410,20 @@ h6 {
     padding: 100px 0 20px 0;
   }
 }
+
+img.img-fluid2{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0
+}
+
+#portfolio .portfolio-item .portfolio-wrap:hover img.img-fluid2 {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#portfolio .portfolio-item .portfolio-wrap:hover img.img-fluid {
+  opacity: 0;
+  transition: 0.3s;
+}
