@@ -6,13 +6,7 @@ fetch("include/portfolio.html")
       document.getElementById('portfolio').innerHTML = data;
     });
 
-    fetch("include/intro.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.getElementById('intro').innerHTML = data;
-    });
+
 
     fetch("include/about.html")
     .then(response => {
