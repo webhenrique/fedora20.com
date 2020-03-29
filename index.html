@@ -511,44 +511,47 @@
       <div class="modal-body">
         <form>
          <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-lg-4 col-md-12 ">
                <div class="Carroucel">
-                     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:680px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-        </div>
-        <div class="in_Carroucel" data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:580px;overflow:hidden;">
-            <!--<div>
-                <img data-u="image" src="img/031.jpg" />
-                <img data-u="thumb" src="img/031-s190x90.jpg" />
-            </div>-->
-           
-        </div>
-        <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
-            <div data-u="slides">
-                <div data-u="prototype" class="p" style="width:190px;height:90px;">
-                    <div data-u="thumbnailtemplate" class="t"></div>
-                    <svg viewbox="0 0 16000 16000" class="cv">
-                        <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
-                        <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
-                        <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
-                    </svg>
+                 <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:680px;overflow:hidden;visibility:hidden;">
+                  <!-- Loading Screen -->
+                  <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                      <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+                  </div>
+                  <div class="in_Carroucel" data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:580px;overflow:hidden;">
+                      <!--<div>
+                          <img data-u="image" src="img/031.jpg" />
+                          <img data-u="thumb" src="img/031-s190x90.jpg" />
+                      </div>-->
+                     
+                  </div>
+                  <!-- Thumbnail Navigator -->
+                  <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
+                      <div data-u="slides">
+                          <div data-u="prototype" class="p" style="width:190px;height:90px;">
+                              <div data-u="thumbnailtemplate" class="t"></div>
+                              <svg viewbox="0 0 16000 16000" class="cv">
+                                  <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                                  <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                                  <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
                </div>
             </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
+            <div class="col-12 col-lg-1 col-md-12 "></div>
+          <div class="col-12 col-lg-7 col-md-12 ">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+         </div>
          </div>
         </form>
       </div>
@@ -646,9 +649,9 @@
           popupimg: ["img/gifs/25n.gif"],
           download: "",
           source: "https://www.thingiverse.com/thing:2573620",
-          sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          sizes: ["Small", "Medium", "Big"],
+          def: 1,
+          prices: [0.50, 1, 3]
       }, {
           filter: "filter-anime",
           subfiler: "Anime",
@@ -659,9 +662,9 @@
           popupimg: ["img/gifs/24n.gif"],
           download: "",
           source: "https://www.thingiverse.com/thing:2030296",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: [ "Big", "Large"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [3, 5]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -672,9 +675,9 @@
           popupimg: ["img/gifs/19n.gif"],
           download: "",
           source: "",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Tiny", "Small"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.30, 0.90]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -685,9 +688,9 @@
           popupimg: ["img/gifs/20n.gif"],
           download: "",
           source: "",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Tiny", "Small"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.30, 0.90]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -698,9 +701,9 @@
           popupimg: ["img/gifs/21n.gif"],
           download: "",
           source: "",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Tiny", "Small"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.30, 0.90]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -711,9 +714,9 @@
           popupimg: ["img/gifs/22n.gif"],
           download: "",
           source: "",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Tiny", "Small"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.30, 0.90]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -724,9 +727,9 @@
           popupimg: ["img/gifs/23n.gif"],
           download: "",
           source: "",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Tiny", "Small"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.30, 0.90]
       }, {
           filter: "filter-others",
           subfiler: "Others",
@@ -738,8 +741,8 @@
           download: "",
           source: "https://www.thingiverse.com/thing:1913982",
           sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          def: 1,
+          prices: [0.50, 1, 2, 4]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -751,8 +754,8 @@
           download: "",
           source: "https://www.thingiverse.com/thing:2831227",
           sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          def: 2,
+          prices: [0.50, 1, 2, 4]
       }, {
           filter: "filter-others",
           subfiler: "Others",
@@ -763,9 +766,9 @@
           popupimg: ["img/gifs/2n.gif"],
           download: "",
           source: "https://www.thingiverse.com/thing:2449436",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: [ "Big", "Large"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [3, 5]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -776,9 +779,9 @@
           popupimg: ["img/gifs/17n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:3615139",
-          sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          sizes: ["Tiny","Small", "Medium", "Big", "Large","HUMONGOUS"],
+          def: 4,
+          prices: [0.30, 0.90, 2, 5,7,10]
       }, {
           filter: "filter-others",
           subfiler: "Others",
@@ -789,9 +792,9 @@
           popupimg: ["img/gifs/16n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:3129886",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Big"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [99]
       }, {
           filter: "filter-games",
           subfiler: "Games",
@@ -802,9 +805,9 @@
           popupimg: ["img/gifs/15n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:3765997",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Big", "Large"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [3, 5]
       }, {
           filter: "filter-anime",
           subfiler: "Anime",
@@ -816,8 +819,8 @@
           download: "",
           source: "http://thingiverse.com/make:698576",
           sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          def: 1,
+          prices: [0.50, 1, 3, 5]
       }, {
           filter: "filter-others",
           subfiler: "Others",
@@ -830,7 +833,7 @@
           source: "http://thingiverse.com/thing:1005481",
           sizes: ["Small", "Medium", "Big", "Large"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.50, 1, 3, 5]
       }, {
           filter: "filter-anime",
           subfiler: "Anime",
@@ -843,7 +846,7 @@
           source: "http://thingiverse.com/thing:2123706",
           sizes: ["Small", "Medium", "Big", "Large"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.50, 1, 3, 5]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -854,9 +857,9 @@
           popupimg: ["img/gifs/11n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:3283029",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Tiny", "Small"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.30, 0.90]
       }, {
           filter: "filter-others",
           subfiler: "Others",
@@ -867,9 +870,9 @@
           popupimg: ["img/gifs/9n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:3958217",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: [ "Big"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [1]
       }, {
           filter: "filter-games",
           subfiler: "Games",
@@ -880,9 +883,9 @@
           popupimg: ["img/gifs/8n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:3857687",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Tiny", "Small"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.30, 0.90]
       }, {
           filter: "filter-anime filter-games",
           subfiler: "Anime/Games",
@@ -893,9 +896,9 @@
           popupimg: ["img/gifs/7n.gif"],
           download: "",
           source: "https://www.thingiverse.com/thing:205699",
-          sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          sizes: ["Tiny","Small", "Medium", "Big", "Large","HUMONGOUS"],
+          def: 1,
+          prices: [0.30, 0.90, 2, 5,7,10]
       }, {
           filter: "filter-anime",
           subfiler: "Anime",
@@ -906,9 +909,9 @@
           popupimg: ["img/gifs/6n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:2523025",
-          sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          sizes: ["Tiny","Small", "Medium", "Big", "Large","HUMONGOUS"],
+          def: 3,
+          prices: [0.30, 0.90, 2, 5,7,10]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -919,9 +922,9 @@
           popupimg: ["img/gifs/5n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:2879444",
-          sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          sizes: ["Tiny","Small", "Medium", "Big", "Large","HUMONGOUS"],
+          def: 3,
+          prices: [0.30, 0.90, 2, 5,7,10]
       }, {
           filter: "filter-dnd",
           subfiler: "D&D",
@@ -932,9 +935,9 @@
           popupimg: ["img/gifs/3n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:3719035",
-          sizes: ["Small", "Medium", "Big", "Large"],
-          def: 0,
-          prices: [1, 2, 3, 4]
+          sizes: ["Tiny","Small", "Medium", "Big", "Large","HUMONGOUS"],
+          def: 2,
+          prices: [0.30, 0.90, 2, 5,7,10]
       }, {
           filter: "filter-games",
           subfiler: "Games",
@@ -945,9 +948,9 @@
           popupimg: ["img/gifs/4n.gif"],
           download: "",
           source: "http://thingiverse.com/thing:1789814",
-          sizes: ["Small", "Medium", "Big", "Large"],
+          sizes: ["Tiny", "Small"],
           def: 0,
-          prices: [1, 2, 3, 4]
+          prices: [0.30, 0.90]
       }/*, {
           filter: "filter-others",
           subfiler: "Others",
@@ -993,7 +996,7 @@
         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
         // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
         var modal = $(this)
-        modal.find('.modal-title').text('New message to ' + recipient)
+        modal.find('.modal-title').text(arrprints[recipient].title)
         modal.find('.modal-body input').val(recipient)
         var everyimage="";
 
