@@ -987,7 +987,7 @@
          full_prof_text+="<p style='font-size: 14px;font-weight: bold;'>"+arrprints[i].prices[arrprints[i].def].toFixed(2)+"$</p></div></div></div></div>";
       }
       full_prof_text+="</div>";
-      $("#portfolio").append(full_prof_text);
+      $("#portfolio").append("<div class='container'>"+full_prof_text+"</div>");
 
 
       $('#exampleModal').on('show.bs.modal', function (event) {
