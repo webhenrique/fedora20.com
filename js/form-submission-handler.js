@@ -81,6 +81,8 @@
             thankYouMessage.style.display = "block";
           }
 		  */
+
+      enableAllButtons(form);
         }
     };
     // url encode form data for sending as post data
@@ -103,6 +105,12 @@
     var buttons = form.querySelectorAll("button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
+    }
+  }
+  function enableAllButtons(form) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = false;
     }
   }
 })();
