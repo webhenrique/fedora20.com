@@ -1,6 +1,3 @@
-## Welcome to our GitHub Page
+## fedora20.com
 
-The website is still 20% done so don't expect much from it.
-
-ALSO! Have you ever had a dream?
-https://www.youtube.com/watch?v=G7RgN9ijwE4
+The website that was used to show 3d prints that have been printed in 2019, an easier showcase in resume.
